@@ -1,5 +1,5 @@
 ## Sequence similarity between the Z and W
-The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes.
+The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (fig. 2A).
 
 ```
 # calculating sequence similarity over 100k sliding windows on the Z chromosome
