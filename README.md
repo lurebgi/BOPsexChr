@@ -25,7 +25,9 @@ Rscript sim100k.r [ide-100k] [alignment size] [output name]
 
 `output name`: the output pdf name
 
-R package ggplot2 needs to be installed. An example input file 'lawesii.z-w.psl.score.ide95.filt.ide-100k' is provided.
+R package [ggplot2] needs to be installed. An example input file 'lawesii.z-w.psl.score.ide95.filt.ide-100k' is provided.
+
+
 
 
 ## Citation
@@ -34,3 +36,4 @@ R package ggplot2 needs to be installed. An example input file 'lawesii.z-w.psl.
 
 [lastz]: http://www.bx.psu.edu/~rsharris/lastz/
 [ucscGenomeBrowser]: https://github.com/ucscGenomeBrowser/kent 
+[ggplot2]: https://cran.r-project.org/web/packages/ggplot2/index.html
