@@ -18,7 +18,6 @@ module load sratoolkit
 
 list=$1
 spe=$2
-sub=$3
 
 
 ln -s /proj/luohao/avian_transcriptome/annotation/$spe.gff
@@ -33,7 +32,7 @@ rsync -aq *.tab *.txt chrLength.txt  chrName.txt  chrStart.txt  Genome  genomePa
 cat $list |  while read sample sra; do
 
 fastq-dump --outdir $TMPDIR  --split-files $sra
-mkdir $TMPDIR/temp; rsem-calculate-expression $TMPDIR/${sra}_1.fastq $TMPDIR/${sra}_2.fastq  $TMPDIR/$spe   $sub/$sample --star -p 8 --paired-end  --no-bam-output  --temporary-folder=$TMPDIR/temp
+mkdir $TMPDIR/temp; rsem-calculate-expression $TMPDIR/${sra}_1.fastq $TMPDIR/${sra}_2.fastq  $TMPDIR/$spe   $sample --star -p 8 --paired-end  --no-bam-output  --temporary-folder=$TMPDIR/temp
 
 rm $TMPDIR/${sra}*fastq
 
