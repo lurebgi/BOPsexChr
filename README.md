@@ -17,7 +17,7 @@ z-w.psl.score.ide95.filt.ide-100k in the out_dir is the final output. The second
 
 
 ```
-# Ploting sequencing similarity along the Z chromosome
+# Plotting sequencing similarity along the Z chromosome
 Rscript sim100k.r [ide-100k] [alignment size] [output name]
 ```
 `ide-100k`: z-w.psl.score.ide95.filt.ide-100k file produced by `lastz.psl-100k_sim.sh`
@@ -28,6 +28,25 @@ Rscript sim100k.r [ide-100k] [alignment size] [output name]
 
 R package [ggplot2] needs to be installed. An example input file 'lawesii.z-w.psl.score.ide95.filt.ide-100k' is provided.
 
+## W-linked sequence verification
+To verify W-linked scaffolds, male sequencing data must be available.
+
+```
+# Calculating sequencing depth and coverage
+sbatch m-f.coverag.sh [genome] [male reads 1] [male reads 2] [female reads 1] [female reads 2]
+```
+`genome`: the genome assembly in fasta format
+`male/female reads *`: full paths for male and female sequence data that are in fastq format
+
+This will generate `male.BAM.coverage` and `female.BAM.coverage` files. Each row represents one scaffold, with information of total scaffold size (3rd column), sequencing depth (4th column), and sequencing coverage (5th column). The ratio of mappable site is calculated by dividing the sequencing coverage by scaffold size.
+
+After retrieving the scaffolds derived from chr5, chrZ and chrW, into a file, e.g. 'femaleCov.m2f', one can plot female coverage (Y axis) and m/f ratios of mappable site (X axis).
+```
+Rscript m2f_ratio.r [species]
+```
+
+## Genome assemblies and raw data
+https://www.ncbi.nlm.nih.gov/bioproject/PRJNA491255
 
 
 [lastz]: http://www.bx.psu.edu/~rsharris/lastz/
