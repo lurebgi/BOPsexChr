@@ -36,6 +36,7 @@ To verify W-linked scaffolds, male sequencing data must be available.
 sbatch m-f.coverag.sh [genome] [male reads 1] [male reads 2] [female reads 1] [female reads 2]
 ```
 `genome`: the genome assembly in fasta format
+
 `male/female reads *`: full paths for male and female sequence data that are in fastq format
 
 This will generate `male.BAM.coverage` and `female.BAM.coverage` files. Each row represents one scaffold, with information of total scaffold size (3rd column), sequencing depth (4th column), and sequencing coverage (5th column). The ratio of mappable site is calculated by dividing the sequencing coverage by scaffold size.
@@ -44,11 +45,13 @@ After retrieving the scaffolds derived from chr5, chrZ and chrW, into a file, e.
 ```
 Rscript m2f_ratio.r [species]
 ```
+`species`: species name, e.g. medium_ground_finch
 
 ## Genome assemblies and raw data
-https://www.ncbi.nlm.nih.gov/bioproject/PRJNA491255
+NCBI BioProject [PRJNA491255]
 
 
 [lastz]: http://www.bx.psu.edu/~rsharris/lastz/
 [ucscGenomeBrowser]: https://github.com/ucscGenomeBrowser/kent
 [ggplot2]: https://cran.r-project.org/web/packages/ggplot2/index.html
+[PRJNA491255]: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA491255
