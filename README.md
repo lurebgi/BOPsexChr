@@ -1,3 +1,5 @@
+This page demonstrate the analysis of sex-linked sequences, including demarcating evolutionary strata and verification of W-linked sequences. Other analyses can be found in directories [Annotation], [Divergent_rate analysis] and [RNA-seq analysis].
+
 ## Sequence similarity between the Z and W
 The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (fig. 2A).
 
@@ -55,3 +57,6 @@ NCBI BioProject [PRJNA491255]
 [ucscGenomeBrowser]: https://github.com/ucscGenomeBrowser/kent
 [ggplot2]: https://cran.r-project.org/web/packages/ggplot2/index.html
 [PRJNA491255]: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA491255
+[Annotation]: https://github.com/lurebgi/BOPsexChr/tree/master/Annotation
+[Divergent_rate analysis]: https://github.com/lurebgi/BOPsexChr/tree/master/Divergent_rate%20analysis
+[RNA-seq analysis]: https://github.com/lurebgi/BOPsexChr/tree/master/RNA-seq%20analysis
