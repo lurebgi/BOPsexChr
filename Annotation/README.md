@@ -1,8 +1,16 @@
+
 Run maker annotation pipeline
 ```
 sbatch maker.sh [ctl file]
 ```
 `ctl file`: the species-specific ctl file, e.g. maker_opts.lawesii.ctl
+
+To train gene models using SNAP and augustus
+```
+sbatch training [species]
+```
+`species`: species name, e.g. lawesii
+
 
 Run RepeatModeler
 ```
