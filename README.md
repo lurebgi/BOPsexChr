@@ -1,7 +1,7 @@
 This page demonstrates the analyses of sex-linked sequences, including demarcating evolutionary strata and verification of W-linked sequences. Other analyses can be found in directories [Annotation], [Divergent_rate analysis], [synteny] and [RNA-seq analysis].
 
 ## Sequence similarity between the Z and W
-The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (Fig. 2A).
+The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (Fig. 2B).
 
 ```
 # calculating sequence similarity over 100k sliding windows on the Z chromosome
