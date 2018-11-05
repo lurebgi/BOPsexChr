@@ -20,7 +20,8 @@ ls -d 000_a* | grep -v out | while read line; do cat $line | while read hog; do 
 ```
 sbatch submit_paml.sh [gene]
 ```
-`gene`: The ID of an ortholgous group. `13643.codeml.br.ctl` is an example ctl file
+`gene`: The ID of an ortholgous group. `13643.codeml.br.ctl` is an example ctl file.
+
 Many of the scripts of this part as well as CDS alignment part are modified from [here].
 
 **To extract info (e.g. # substitution sites) from paml outputs**
