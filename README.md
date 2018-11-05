@@ -31,7 +31,7 @@ Rscript sim100k.r [ide-100k] [alignment size] [output name]
 R package [ggplot2] needs to be installed. An example input file 'lawesii.z-w.psl.score.ide95.filt.ide-100k' is provided.
 
 ## W-linked sequence verification
-To verify W-linked scaffolds, male sequencing data must be available.
+It's possible to verify W-linked scaffolds only when male sequencing data is available.  
 
 ```
 # Calculating sequencing depth and coverage
