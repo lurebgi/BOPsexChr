@@ -1,7 +1,7 @@
 This page demonstrates the analyses of sex-linked sequences, including demarcating evolutionary strata and verification of W-linked sequences. Other analyses can be found in directories [Annotation], [Divergent_rate analysis], [synteny] and [RNA-seq analysis].
 
 ## Sequence similarity between the Z and W
-The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (fig. 2A).
+The analysis of sequence similarity between ZW help demarcate the evolutionary strata of avian sex chromosomes (Fig. 2A).
 
 ```
 # calculating sequence similarity over 100k sliding windows on the Z chromosome
@@ -37,7 +37,7 @@ It's possible to verify W-linked scaffolds only when male sequencing data is ava
 # Calculating sequencing depth and coverage
 sbatch m-f.coverag.sh [genome] [male reads 1] [male reads 2] [female reads 1] [female reads 2]
 ```
-`genome`: the genome assembly in fasta format
+`genome`: the genome assembly in fasta format.
 
 `male/female reads *`: full paths for male and female sequence data that are in fastq format
 
@@ -47,7 +47,9 @@ After retrieving the scaffolds derived from chr5, chrZ and chrW, into a file, e.
 ```
 Rscript m2f_ratio.r [species]
 ```
-`species`: species name, e.g. medium_ground_finch
+`species`: species name, e.g. medium_ground_finch.
+
+This script can reproduce Fig. 1A.
 
 ## Genome assemblies and raw data
 NCBI BioProject [PRJNA491255]
