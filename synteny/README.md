@@ -16,7 +16,7 @@ Rscript pairwise.rf.r [rf file] [out]
 
 `out`: the name of output PDF
 
-**Plot multiple pair-wise synteny**
+**Plot multiple pair-wise synteny (Fig. 2A)**
 ```
 cat *.rf > all.rf
 Rscript multiple.rf.r all.rf all.rf.pdf
